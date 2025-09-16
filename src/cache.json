@@ -1,0 +1,18 @@
+{
+  "USD_BRL": {
+    "rate": 5.3166,
+    "timestamp": 1757959716592
+  },
+  "BRL_USD": {
+    "rate": 0.1879664,
+    "timestamp": 1757960062946
+  },
+  "JPY_BRL": {
+    "rate": 0.03608577,
+    "timestamp": 1757960598922
+  },
+  "USD_EUR": {
+    "rate": 0.84975,
+    "timestamp": 1757960617030
+  }
+}

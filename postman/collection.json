@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "8bc1e6cb-3541-4f8b-ae76-9057c1dfa0c2",
+		"name": "Currency API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48406929",
+		"_collection_link": "https://pedro-as2000-7053454.postman.co/workspace/9ef04f7b-43ff-4296-868e-465de71bbf72/collection/48406929-8bc1e6cb-3541-4f8b-ae76-9057c1dfa0c2?action=share&source=collection_link&creator=48406929"
+	},
+	"item": [
+		{
+			"name": "Convert Currency",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Teste para verificar se o status é 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Teste para verificar se todos os campos existem na resposta\r",
+							"pm.test(\"Response has all required fields\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property('from');\r",
+							"    pm.expect(jsonData).to.have.property('to');\r",
+							"    pm.expect(jsonData).to.have.property('amount');\r",
+							"    pm.expect(jsonData).to.have.property('converted');\r",
+							"    pm.expect(jsonData).to.have.property('rate');\r",
+							"    pm.expect(jsonData).to.have.property('date');\r",
+							"    pm.expect(jsonData).to.have.property('cached');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rates",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response is an object\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.be.an('object');\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rates"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
