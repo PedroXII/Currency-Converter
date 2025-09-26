@@ -53,6 +53,25 @@ sequenceDiagram
     API->>API: Calcular valor convertido
     API-->>Cliente: Retornar resposta com valor convertido
 
+# Relação com ODS 11 - Cidades e Comunidades Sustentáveis
+
+Este projeto contribui para o **ODS 11 - Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis** através dos seguintes aspectos:
+
+##  Inclusão Financeira Digital
+- Facilita o acesso a informações econômicas atualizadas para pequenos empreendedores.
+- Permite que micro e pequenas empresas realizem transações internacionais de forma mais acessível.
+- Reduz barreiras cambiais para negócios locais que desejam expandir para mercados internacionais.
+
+## Conectividade e Acesso à Informação
+- Promove a integração de sistemas econômicos globais com comunidades locais.
+- Facilita o comércio eletrônico entre diferentes países e moedas.
+- Contribui para a criação de cidades mais conectadas digitalmente.
+
+## Transparência Econômica
+- Oferece acesso democrático a taxas de câmbio atualizadas.
+- Permite que cidadãos e empresas tomem decisões financeiras mais informadas.
+- Reduz assimetrias de informação no mercado cambial.
+
 # Instruções detalhadas para execução via Postman
 
 Configuração do Postman
